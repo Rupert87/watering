@@ -15,7 +15,12 @@ sub startup {
   my $r = $self->routes;
 
   # Normal route to controller
-  $r->get('/')->to('example#welcome');
+  $r->get('/')->to('Core#home');
+  $r->get('/login')->('account#loginform');
+  $r->post('/login')->('account#login');
+  $authed = $r->under()->to('auth#checksession')
+  $authed->get('/water')->to('Water#schedule')->name('schedule');
+  $authed->post('/water')->to('Water#tracking')->name('tracking);#use to track status of water controller 
 }
 
 1;
