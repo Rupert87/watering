@@ -1,4 +1,4 @@
-package Garden::Controller::Menu
+package Garden::Controller::Menu;
 use Mojo::Base 'Mojolicious::Controller';
 
 
