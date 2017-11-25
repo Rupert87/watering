@@ -13,7 +13,7 @@ sub startup {
  
  my $self = shift;
  
- $self->secrets(['caKC2012']);
+ $self->secrets(['password']);
   $self->session(expiration => 28800);
  
  $self->plugin('Config');
@@ -60,10 +60,13 @@ sub startup {
 
   # Normal route to controller
   $r->get('/')->to('core#home');
-  #$r->get('/auth')->to('account#loginform')->name('login_form');
-  $r->post('/auth')->to('account#login')->name('login');
-  my $authed = $r->under()->to('auth#checksession');
+  $r->get('/auth')->to('auth#login_form')->name('login_form');
+  $r->post('/auth')->to('auth#login')->name('login');
+  
+  # Authed routes, must have account to access
+  my $authed = $r->under()->to('auth#check_session');
   $authed->get('/water')->to('water#menu')->name('menu');
+  $authed->get('/water/status')->to('water#status')->name('status');
   $authed->post('/water')->to('water#tracking')->name('tracking');#use to track status of water controller 
 }
 1;

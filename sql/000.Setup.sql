@@ -10,22 +10,26 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
+
 ---- Auth Dependencies ----
 
-CREATE SCHEMA IF NOT EXISTS watering AUTHORIZATION water_user;
+CREATE SCHEMA IF NOT EXISTS water AUTHORIZATION water_user;
 
-SET SEARCH_PATH TO watering,public;
+SET SEARCH_PATH TO water,public;
 
-CREATE TABLE users (
+CREATE TABLE user_login (
 	id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
 	genesis TIMESTAMPTZ DEFAULT now(),
 	modified TIMESTAMPTZ DEFAULT now(),
-	type TEXT UNIQUE,
+	name TEXT,
 	active BOOLEAN DEFAULT TRUE
 );
+
+GRANT SELECT, INSERT, UPDATE, DELETE ON user_login TO water_user;
+CREATE TRIGGER integrity_enforcement BEFORE UPDATE ON user_login
 	FOR EACH ROW EXECUTE PROCEDURE public.integrity_enforcement();
 
-CREATE TABLE user_profile (
+CREATE TABLE users (
 	id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
 	genesis TIMESTAMPTZ DEFAULT now(),
 	modified TIMESTAMPTZ DEFAULT now(),
@@ -34,9 +38,10 @@ CREATE TABLE user_profile (
 	city TEXT,
 	state TEXT,
 	zip TEXT,
-	active BOOLEAN DEFAULT TRUE,
+	active BOOLEAN DEFAULT TRUE
 );
 
-GRANT SELECT, INSERT, UPDATE, DELETE ON user_profile TO water_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON users TO water_user;
 CREATE TRIGGER integrity_enforcement BEFORE UPDATE ON users
 	FOR EACH ROW EXECUTE PROCEDURE public.integrity_enforcement();
+	

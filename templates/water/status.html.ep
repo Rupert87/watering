@@ -1,0 +1,7 @@
+<html>
+
+Render data abbout status of current water controllers. 
+
+
+</html>
+%= button_to Back => '/water'

@@ -1,10 +1,13 @@
-use Mojolicious::Lite;
+package Garden::Controller::Water;
+use Mojo::Base 'Mojolicious::Controller';
 
-# /foo?user=sri
-get '/foo' => sub {
-  my $c    = shift;
-  my $user = $c->param('user');
-  $c->render(text => "Hello $user.");
-};
+sub menu {
+	my $self = shift;
 
-app->start;
+	}
+        
+sub status {
+    
+        my $self = shift;
+           }
+1;

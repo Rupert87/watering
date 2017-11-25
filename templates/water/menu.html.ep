@@ -1,0 +1,10 @@
+<html>
+Watering menu
+
+</html>
+
+%= button_to Status => '/water/status'
+%= button_to Back => '/water'
+%= file_field 'avatar'
+%= password_field 'pass', id => 'pass'
+%= search_field q => 'perl'
