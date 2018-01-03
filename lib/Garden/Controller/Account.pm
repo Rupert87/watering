@@ -14,6 +14,7 @@ sub login{
 		$self->redirect_to($self->url_for('menu'));
 	} else {
 		#failed to login
+                say "failed to login";
 	}
 }
 1;

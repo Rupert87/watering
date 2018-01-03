@@ -61,7 +61,7 @@ sub startup {
   # Normal route to controller
   $r->get('/')->to('core#home');
   $r->get('/auth')->to('auth#login_form')->name('login_form');
-  $r->post('/auth')->to('auth#login')->name('login');
+  $r->post('/auth')->to('auth#login')->name('auth');
   
   # Authed routes, must have account to access
   my $authed = $r->under()->to('auth#check_session');

@@ -16,7 +16,7 @@
 			</div>
 			<div class="form-group">
 				<div class="col-sm-12">
-					<button type="submit" class="btn btn-default center-block" id="submit_button" alt="Login">Login</button>
+					<button type="submit" class="btn btn-default center-block" id="submit_button" alt="Login">Login <style="background: #5fb8b9; color: #fff; padding: 8px 12px; border: 0px; -webkit-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;-moz-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;border-radius: 4px; text-decoration: none; display: inline-block;"></button>
 				</div>
 			</div>
 		% end
@@ -31,3 +31,5 @@
 	</div>
 
 % end
+
+

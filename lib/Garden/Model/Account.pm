@@ -61,7 +61,7 @@ sub full_name{
 sub get_id{
 	my ($self,$username) = @_;
 	
-	my $id = $self->pg->db->query('select id from users where login_identifier = ?',$username)->hash;
+	my $id = $self->pg->db->query('select id from auth.users where login_identifier = ?',$username)->hash;
 	
 	return $id->{'id'};
 }
