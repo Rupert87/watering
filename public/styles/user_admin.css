@@ -1,0 +1,74 @@
+#add_user_div{
+	height: 350px;
+	width: 375px;
+	margin-left: 35px;
+	margin-top: 20px;
+	padding-top: 15px;
+	padding-left: 25px;
+	color: white;
+	background-color: #333;
+	background-image: url('../images/login_box_gradient.jpg');
+	background-repeat: repeat-x;
+	border: 3px ridge #333;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	float: left;
+}
+
+#user_to_group{
+	height: 350px;
+	width: 475px;
+	margin-left: 35px;
+	margin-top: 20px;
+	padding-top: 15px;
+	padding-left: 25px;
+	color: white;
+	background-color: #333;
+	background-image: url('../images/login_box_gradient.jpg');
+	background-repeat: repeat-x;
+	border: 3px ridge #333;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	float: left;
+}
+
+h3{
+	width: 325px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+label{
+	display: inline-block;
+	width: 170px;
+	margin-bottom: 10px;
+}
+
+#submit_button{
+	display: block;
+	margin-top: 5px;
+	width: 80px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+input{
+	vertical-align: top;
+}
+
+select{
+	vertical-align: top;
+}
+
+#select_user_div img{
+	vertical-align: top;
+}
+
+#select_user_header{
+	width: 55px;
+}

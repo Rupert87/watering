@@ -1,0 +1,45 @@
+.wrapper{
+	float: left;
+	margin-top: 25px;
+	margin-left: 25px;
+	margin-bottom: 25px;
+	margin-right: 25px;
+	min-width: 700px;
+}
+
+label.add, label.del{
+	_border: 1px green solid;	
+	display: inline-block;
+	width: 155px;
+	min-width: 70px;
+	height: 25px;
+	padding-left: 4px;
+	padding-top: 4px;
+
+}
+
+input{
+	margin-left: 4px;
+	margin-top: 4px;
+}
+
+select{
+	margin-left: 4px;
+	margin-top: 4px;
+}
+
+.submit_button{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4px;
+}
+
+.header_text{
+	padding-top: 4px;
+	padding-left: 4px;
+	padding-bottom: 4px;
+	padding-right: 4px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.1em;
+}

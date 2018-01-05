@@ -1,0 +1,86 @@
+a{
+	color: white;
+}
+
+.tooltip{
+	margin-left: 3px;
+	margin-right: 3px;
+	color: white;
+}
+
+#behind_popup{
+	display:none;
+	position:fixed;
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+	background:#000000;
+	border:1px solid #cecece;
+	z-index:7999;
+}
+
+#confirm_dialog{
+	display: none;
+	position:fixed;
+	height:530px;
+	width:408px;
+	background:#FFFFFF;
+	border:2px solid #cecece;
+	z-index:8000;
+	padding:12px;
+	font-size:13px;
+}
+
+textarea{
+	margin-left: 35px;
+	font-size: .9em;
+}
+
+input{
+	font-size: .9em !important; /*this is to override the jquery css on these widgets with a size that fits the page better */
+}
+
+select{
+	font-size: .9em !important;
+}
+
+.pwd{
+	margin-left: 35px;
+}
+
+#site_name{
+	width: 300px;
+}
+
+.success{
+	margin-bottom: 5px;
+	text-shadow: #333 1px 1px 1px;
+	white-space: nowrap;
+	font-size: .9em;
+	display: block;
+}
+
+#update_div{
+	width: 116px;
+	margin-left: 135px;
+}
+
+.module_label{
+	display: inline-block;
+	width: 200px;
+}
+
+.styled_text{
+	text-shadow: #333 1px 1px 1px;
+	white-space: nowrap;
+	font-size: .95em;
+}
+
+.submit_button{
+	cursor: pointer;
+}
+
+.change_site_level_success{
+	display: none;
+}

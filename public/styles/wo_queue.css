@@ -1,0 +1,108 @@
+#left{
+	float: left;
+	height: 600px;
+	width: 19%;
+	min-width: 175px;
+}
+
+#right_holder{
+	float: left;
+	height: 575px;
+	width: 75%;
+	padding-top: 25px;
+	padding-left: 25px;
+}
+
+.wo_link{
+	text-decoration: none;
+	font-size: .9em;
+	font-weight: bold;
+	color: white;
+	min-width: 150px;
+	height: 25px;
+	padding-top: 5px;
+	display: inline-block;
+	text-align: center;
+}
+
+#wo{
+	background-color: #333;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	width: 150px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#wo a{
+	color: white;
+	text-decoration: none;
+}
+
+.selected{
+	background-color: #777;
+}
+
+#update_form input{
+	width: 170px;
+	margin-right: 5px;
+}
+
+#update_form span{
+	width: 170px;
+	margin-right: 5px;
+}
+
+#behind_popup{
+	display:none;
+	position:fixed;
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+	background:#000000;
+	border:1px solid #cecece;
+	z-index:8999;
+}
+
+.disabled{
+	background-color: #3e3e3e;
+	cursor: arrow;
+}
+
+.ui-jqgrid{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;	
+}
+
+.attached_file{
+	text-decoration: none;
+}
+
+#attach_div{
+	width: 270px;
+	height: 300px;
+	margin-left: 5px;
+	margin-top: 5px;
+	float: left;
+}
+
+#update_form #attach_div{
+	float: left;
+	display: inline-block;
+}
+
+#attach_div label{
+	margin: 0px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+#attach{
+	cursor: pointer;
+}

@@ -1,0 +1,79 @@
+.change_div{
+	height: 150px;
+	width: 450px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 20px;
+	padding-top: 20px;
+	padding-left: 25px;
+	color: white;
+	background-color: #333;
+	background-image: url('../images/login_box_gradient.jpg');
+	background-repeat: repeat-x;
+	border: 3px ridge #333;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+}
+
+#select_customer_div{
+	height: 50px;
+	width: 450px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+	padding-top: 20px;
+	padding-left: 25px;
+	color: white;
+	background-color: #333;
+	background-image: url('../images/login_box_gradient.jpg');
+	background-repeat: repeat-x;
+	border: 3px ridge #333;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+}
+
+label.error{
+	color: red;
+	font-size: .6em;
+}
+
+.change_form label{
+	display: inline-block;
+	width: 200px;
+	text-align: right;
+	margin-right: 5px;
+}
+
+#select_customer_div label{
+	display: inline-block;
+	width: 200px;
+	text-align: right;
+}
+
+#submit_button{
+	width: 80px;
+}
+
+#email_submit_button{
+	width: 170px;
+}
+
+.change_submit{
+	margin-top: 10px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.change_title{
+	display: block;
+	margin-bottom: 20px;
+	width: 245px;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-left: auto;
+	margin-right: auto;
+}
+

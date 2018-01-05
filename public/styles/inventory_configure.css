@@ -1,0 +1,116 @@
+#errorspace{
+	margin-top: 5px;
+	width: auto;
+	text-align: right;
+}
+
+#configure_top{
+	width: 600px;
+	height: 125px;
+	min-width: 530px;
+	padding: 10px;
+	color: white;
+	background-color: #333;
+	background-image: url('../images/login_box_gradient.jpg');
+	background-repeat: repeat-x;
+	border: 3px ridge #333;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+}
+
+#configure_bottom{
+	width: 600px;
+	min-width: 480px;
+	margin-top: 10px;
+	padding: 10px;
+	color: white;
+	background-color: #333;
+	background-image: url('../images/login_box_gradient.jpg');
+	background-repeat: repeat-x;
+	border: 3px ridge #333;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+}
+
+.tp_div{
+	width: 500px;
+	height: 30px;
+}
+
+#add_tp_div{
+	margin-bottom: 10px;
+}
+
+.submit_tp_div{
+	width: 80px;
+	height: 25px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.multiselect{
+	width: 460px;
+	height: 400px;
+	display: none;
+}        
+
+#submit_a_tp{
+	float: right;
+	margin-right: 20px;
+}
+
+.tp_return{
+	display: inline-block;	
+}
+
+.error{
+	color: red;
+}
+
+
+.header_text{
+	display: block;
+	font-size: 1.1em;
+	font-weight: bold;
+	width: 385px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+div.available{
+	color: black;
+}
+
+#submit_add_button{
+	float: left;
+}
+
+#add_tp_form{
+	width: 440px;
+	float: left;
+}
+
+#del_tp_form{
+        width: 440px;
+        float: left;
+}
+
+#add_tp_form{
+	width: 400px;
+	display: inline;
+}
+
+#add_tp_form label{
+	max-width: 90px;
+}
+
+#del_tp_form{
+	width: 400px;
+	display: inline;
+}
+
+#del_tp_form label{
+	max-width: 90px;
+}

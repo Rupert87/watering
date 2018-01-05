@@ -1,0 +1,114 @@
+div.header{
+	height: 25px;
+	background-color: #333;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+
+div#query_builder{
+	min-width: 200px;
+	margin: 30px;
+	width: 90%;
+	height: auto;
+	min-height: 220px;
+	border: 1px black solid;
+	overflow: auto;
+}
+
+div#query_permissions{
+	min-width: 200px;
+	margin: 30px;
+	_width: 90%;
+	width: 537px;
+	height: auto;
+	min-height: 300px;
+	border: 1px black solid;
+}
+
+#query_builder select{
+	min-width: 200px;
+	margin-right: 4px;
+}
+
+label{
+	display: inline-block !important;
+	width: 100px;
+}
+
+select{
+	margin-bottom: 0px !important;
+}
+
+#select_div{
+	width: 95%;
+	padding-left: 15px;
+	height: 35px;
+}
+
+#select_div div{
+	display: inline-block;
+}
+
+#from_div{
+	padding-left: 15px;
+	height: 35px;
+}
+
+.where_div{
+	padding-left: 15px;
+	min-height: 35px;
+}
+
+#from_div div{
+	display: inline-block;
+}
+
+#join_div_parent{
+	width: 100%;
+	min-height: 30px;
+}
+
+.join_div{
+	height: 30px;
+	padding-left: 15px;
+}
+
+.join_div_element{
+	display: inline-block;
+}
+
+.where{
+	width: 100%;
+}
+
+.other_div{
+	min-height: 30px;
+	padding-left: 15px;
+}
+
+#submit_div{
+	height: 35px;
+	padding-top: 5px;
+	padding-left: 15px;
+}
+
+#submit_div img{
+	vertical-align: middle;
+}
+
+#associate_rp{
+	width: 40%;
+	min-width: 460px;
+	min-height: 300px;
+}
+
+.ui-jqgrid{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.fl{
+	width: 50px !important;
+	margin-right: 4px;
+}
