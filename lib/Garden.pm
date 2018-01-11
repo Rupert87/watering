@@ -59,7 +59,7 @@ sub startup {
   my $r = $self->routes;
 
   # Normal route to controller
-  $r->get('/')->to('core#home');
+  $r->get('/')->to('core#home')->name('home');
   $r->get('/auth')->to('auth#login_form')->name('login_form');
   $r->post('/auth')->to('auth#login')->name('auth');
   
