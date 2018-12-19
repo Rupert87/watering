@@ -1,12 +1,24 @@
-% layout 'default';
-% title 'Watering Status';
+<div class="row">
+    <h2>Status</h2>
+<div class="col-sm-9>
+    <btn> Button </btn>
+    </div>
+    </div>
 
 
 <div class="col-sm-9>
 
-%= button_to Status => 'water/status'
+%= button_to Home => 'water'
 </div>
 
-<div>
-%= button_to Back => '/water'
+
+<div class="col-sm-9>
+%= button_to Back => '/water/connected'
+
+
+%= file_field 'avatar'
+
+%= search_field q => 'perl'
+
 </div>
+    
