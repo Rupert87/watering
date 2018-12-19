@@ -9,6 +9,7 @@ sub connected{
 
 sub water{
     
+    my $self = shift;
     
     my $rs = $self->pg->db->query('select level from water_level';);
     
