@@ -17,6 +17,10 @@
 		  		%= javascript $script
 		  	% }
 		% }
+<!-- Custom styles for this template -->
+		<link href="css/common.css" rel="stylesheet">
+		<link href="css/full-slider.css" rel="stylesheet">
+		<link href="css/index.css" rel="stylesheet">
 	</head>
     <body>
     	<div class="container-fluid">
