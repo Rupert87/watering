@@ -43,13 +43,8 @@
 					</ul>
 					
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="/why-infinity">Why Infinity</a></li>
-						<li><a href="/solutions">Infinite Solutions</a></li>
-						<li><a href="/about">About</a></li>
-						<li><a href="/contact">Contact</a></li>
-						<li><a href="/learn">Learn</a></li>
-						<li><a href="tel:9132221000"><i class="fa fa-phone its-blue"></i> (913) 222 - 1000</a></li>
-						<li><a href="mailto:info@infinity-ts.com"><i class="fa fa-envelope-o its-blue"></i> info@infinity-ts.com</a></li>
+						<li><a href="/water/status">Status</a></li>
+						<li><a href="/water">Water Dashboard</a></li>
 					</ul>
 				</div>
 				
