@@ -8,7 +8,7 @@
 
 <div class="col-sm-9>
 
-%= button_to Home => 'water'
+%= button_to Home => '/water'
 </div>
 
 
