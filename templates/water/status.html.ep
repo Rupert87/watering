@@ -2,10 +2,10 @@
 % title 'Watering Status';
 
 
-<html>
+<div class="col-sm-9>
 
-Render data abbout status of current water controllers. 
+%= button_to Status => 'water/status'
 
-
-</html>
 %= button_to Back => '/water'
+
+</div>
