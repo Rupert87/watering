@@ -5,7 +5,8 @@
 <div class="col-sm-9>
 
 %= button_to Status => 'water/status'
+</div>
 
+<div>
 %= button_to Back => '/water'
-
 </div>
