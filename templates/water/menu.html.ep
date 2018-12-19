@@ -12,8 +12,6 @@
 <div class="col-sm-9>
 
 %= button_to Status => '/status'
-% my $code = $mt->code; $mt      = 
-%$mt->code(pg->db->query('select level from water_level';));
 </div>
 
 
