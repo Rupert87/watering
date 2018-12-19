@@ -1,6 +1,6 @@
 % layout 'default';
 % title 'Login';
 
-%= include 'auth/login_form'
+%= include 'account/login_form'
 
 		%= content_for 'login_form'

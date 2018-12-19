@@ -1,7 +1,7 @@
 package Garden::Controller::Core;
 use Mojo::Base 'Mojolicious::Controller';
 
-sub home {
+#sub home {
 #    my $self = shift;
     
  #   my $session = $self->session->{'id'} // '00000000-0000-0000-0000-000000000000';
@@ -10,8 +10,14 @@ sub home {
   #  }
 
 sub home {
-	my $self = shift;
+my $self = shift;
 
-	}
 }
+
+sub signup_form {
+    
+my $self = shift;
+
+}
+
 1;

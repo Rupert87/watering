@@ -7,30 +7,12 @@ sub login_form{
 	$self->render('account/login');
 }
 
-sub authenticate{
-	my $self = shift;
-	
-	my $session = $self->session->{'id'} // '00000000-0000-0000-0000-000000000000';
-	if($self->auth->verifySession($session)){
-		#checking what we have in the database vs what is in the cookie if there is one
-		#if there is no cookie for this domain, create one
-		my $session = $self->auth->retrieveSessionByID($session);
-		$self->session($session);
-		if($self->session('account_type') eq 'Admin'){
-			$self->render('water/status');
-		} else {
-			$self->render('core/home');
-		}
-	}
-        
-        }
-
 #authenticates a user and creates their session cookie
 sub login{
 	my $self = shift;
 	
 	my $result = $self->auth->authenticate($self->param('username'),$self->param('password'));
-	
+	warn $result->{'status'};
 	if($result->{'status'}){
 		#we logged in successfully
 		my $id = $self->account->get_id($self->param('username'));
@@ -38,6 +20,7 @@ sub login{
 		$self->redirect_to($self->url_for('menu'));
 	}
 }
+
 
 sub check_session {
 	my $self = shift;
@@ -49,7 +32,7 @@ sub check_session {
 	if($self->tx->req->is_xhr){
 		$self->render(json => {status => Mojo::JSON->false}, status => 403);
 	} else {
-		$self->redirect_to($self->url_for('menu'));
+		$self->redirect_to($self->url_for('home'));
 	}
 	return;
 }
@@ -62,4 +45,6 @@ sub _create_session{
 		user_id => $id 
 	});
 }
+
+
 1;

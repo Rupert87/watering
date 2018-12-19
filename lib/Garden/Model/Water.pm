@@ -1,21 +1,38 @@
 package Garden::Controller::Time;
 use Mojo::Base 'Mojolicious::Controller';
 
-use v5.18.2;
-use Time::Piece qw(localtime);
-#use Win32;
-#use Win32::Daemon;
-use warnings;
-
-sub start_water{
-
-#my $Context = {last_state} = SERVICE_RUNNING;
-#Device::BCM2835::gpio_fsel(&Device::BCM2835::RPI_GPIO_P1_3, 
-#                            &Device::BCM2835::BCM2835_GPIO_FSEL_OUTP);
-							
-#$Context->{last_state} = SERVICE_RUNNING;
-#Win32::Daemon::StartService();
-#Win32::Daemon::State( SERVICE_RUNNING );
-
+use Mojo::Transaction::WebSocket;
+ sub connected{
+     my $hostname = '10.3.1.104';
+     my $username = 'root';
+     my $password = 'Hard01Can!!';
+     my $cmd = 'python /home/dht/Adafruit_Python_DHT/examples/AdafruitDHT.py 11 4';
+     
+my $ssh = Net::SSH::Perl->new("$hostname", debug=>0);
+$ssh->login("$username","$password");
+my ($stdout,$stderr,$exit) = $ssh->cmd("$cmd");
+print $stdout;
 }
+
+
+
+#use v5.18.2;
+
+#NAME
+
+  #  RPi::DHT11 - Fetch the temperature/humidity from the DHT11 hygrometer
+ #   sensor on Raspberry Pi
+
+#SYNOPSIS
+
+    #    use RPi::DHT11;
+    
+   #     my $pin = 4;
+    
+  #      my $env = RPi::DHT11->new($pin);
+    
+ #       my $temp     = $env->temp;
+#        my $humidity = $env->humidity;
+
+
 1;

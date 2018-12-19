@@ -60,13 +60,18 @@ sub startup {
 
   # Normal route to controller
   $r->get('/')->to('core#home')->name('home');
-  $r->get('/auth')->to('auth#login_form')->name('login_form');
-  $r->post('/auth')->to('auth#login')->name('auth');
+  $r->get('/signup')->to('core#signup_form')->name('signup_form');
+  $r->post('/signup')->to('auth#login')->name('signup');
+  $r->get('/login')->to('auth#login_form')->name('login_form');
+  $r->post('/login')->to('auth#login')->name('login');
+  $r->get('/register')->to('account#new_user_form')->name('new_user_form');
+  $r->post('/register')->to('account#new_user')->name('new_user');
   
   # Authed routes, must have account to access
   my $authed = $r->under()->to('auth#check_session');
   $authed->get('/water')->to('water#menu')->name('menu');
   $authed->get('/water/status')->to('water#status')->name('status');
   $authed->post('/water')->to('water#tracking')->name('tracking');#use to track status of water controller 
+  $authed->get('/water/connected')->to('water#connected');
 }
 1;
