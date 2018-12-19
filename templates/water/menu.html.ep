@@ -11,7 +11,7 @@
 
 <div class="col-sm-9>
 
-%= button_to Status => '/status'
+%= button_to Status => 'water/status'
 </div>
 
 
