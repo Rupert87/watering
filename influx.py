@@ -55,7 +55,7 @@ try:
         conn = psycopg2.connect(database='watering', user='water_user', password='password', host='10.3.1.122', port='5432')
         cur = conn.cursor()
         #cur.execute("INSERT INTO temperature VALUES(%s, %s, %s);", [temperature])
-        cur.execute("""INSERT INTO tax VALUES (1,'{"data": temperature} ')""")
+        cur.execute("""INSERT INTO tax VALUES (1,'{"temperature"} ')""")
         #cur.execute("INSERT INTO measurements VALUES(%s);", [humidity])
         #cur.execute("INSERT INTO tax VALUES(%s);", [humidity])
         #(INSERT INTO books VALUES (1,
