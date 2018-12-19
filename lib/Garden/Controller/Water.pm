@@ -11,7 +11,7 @@ sub water{
     
     my $self = shift;
     
-    my $rs = $self->pg->db->query('select data from tax';);
+    my $rs = $self->pg->db->query('select data from tax');
     
     
     
