@@ -1,3 +1,7 @@
+% layout 'default';
+% title 'Watering Status';
+
+
 <html>
 
 Render data abbout status of current water controllers. 
