@@ -16,4 +16,14 @@ sub water{
     
     
     }
+sub status{
+    
+    
+    my $self = shift;
+    
+    my json = $self ->pg->db->query('select data from tp');
+    
+    
+    
+    }
 1;
