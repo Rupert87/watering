@@ -22,7 +22,7 @@
 
 %= file_field 'avatar'
 
-%= search_field q => 'perl'
+%= dumper [data]
 
 </div>
     
