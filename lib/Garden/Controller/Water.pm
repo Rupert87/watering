@@ -19,11 +19,11 @@ sub water{
 sub status{
     
     
-    my $c = shift;
+    my $self = shift;
     
-    my $json = $db ->pg->db->query('select data from tp')->hash;
+    my $json = $self ->pg->db->query('select data from tp')->hash;
     
-    return $c->render(template => '/water/status', result => $json);
+    return $self->render(template => '/water/status', result => $json);
     
     }
 1;
