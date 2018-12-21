@@ -22,7 +22,7 @@
 
 %= file_field 'avatar'
 
-%= dumper ['status']
+%= status [1]
 
 </div>
     
