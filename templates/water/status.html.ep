@@ -22,7 +22,7 @@
 
 %= file_field 'avatar'
 
-%= json [1]
+%= dumper $json
 
 </div>
     

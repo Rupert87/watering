@@ -1,5 +1,6 @@
 package Garden::Controller::Water;
 use Mojo::Base 'Mojolicious::Controller';
+use Mojo::JSON qw(decode_json encode_json);
 
 sub connected{
 
@@ -13,8 +14,7 @@ sub water{
     
     my $rs = $self->pg->db->query('select data from tax');
     
-    
-    
+   
     }
 sub status{
     
@@ -22,8 +22,6 @@ sub status{
     my $self = shift;
     
     my $json = $self ->pg->db->query('select data from tp');
-    
-    
     
     
     
