@@ -22,7 +22,7 @@
 
 %= file_field 'avatar'
 
-%= status [1]
+%= json [1]
 
 </div>
     
