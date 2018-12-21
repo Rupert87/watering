@@ -1,0 +1,27 @@
+% layout 'default';
+% title 'Status';
+
+<div class="row">
+    <h2>Hello</h2>
+<div class="col-sm-9>
+    <btn> Help! </btn>
+    </div>
+    </div>
+
+
+<div class="col-sm-9>
+
+%= button_to Status => 'water/status'
+</div>
+
+
+<div class="col-sm-9>
+%= button_to Back => '/water'
+
+
+%= file_field 'avatar'
+
+%= search_field q => 'perl'
+
+</div>
+    

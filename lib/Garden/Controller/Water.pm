@@ -23,7 +23,7 @@ sub status{
     
     my $json = $self ->pg->db->query('select data from tp')->hash;
     
-    return $self->render(template => '/status', result => $json);
+    return $self->render(template => '/water/status', result => $json);
     
     }
 1;
