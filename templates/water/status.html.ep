@@ -1,28 +1,3 @@
 % layout 'default';
 % title 'Water Dashboard';
 
-
-<div class="row">
-    <h2>Status</h2>
-<div class="col-sm-9>
-    <btn> Button </btn>
-    </div>
-    </div>
-
-
-<div class="col-sm-9>
-
-%= button_to Home => '/water'
-</div>
-
-
-<div class="col-sm-9>
-%= button_to Back => '/water/connected'
-
-
-%= file_field 'avatar'
-
-%= dumper $json
-
-</div>
-    
