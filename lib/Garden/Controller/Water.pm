@@ -21,9 +21,9 @@ sub status{
     
     my $self = shift;
     
-    my $json = $self ->pg->db->query('select data from tp');
+    my $json = $self ->pg->db->query('select data from tp')->hash;
     
-    
+    return $self->render(template => 'status', result => $json);
     
     }
 1;
