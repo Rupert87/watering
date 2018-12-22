@@ -23,9 +23,6 @@ sub status{
     
     my $jsonstuff = $self ->pg->db->query('select data from tp')->hash;
     
-    my $jsonstash = $wheeps->stash($jsonstufs);
-    
-    return $jsonstash->render(template => '/water/status', json = $jsonstash);
     
     return $self->render(template => '/water/status', json => $jsonstuff);
     
