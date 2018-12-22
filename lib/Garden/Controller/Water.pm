@@ -25,5 +25,8 @@ sub status{
     
     return $self->render(template => '/water/status', result => $jsonstuff);
     
+    my $bool = $c->render(data => $bytes);
+    
+    my $bool = $c->render(json => {foo => 'bar'});
     }
 1;
