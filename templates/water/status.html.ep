@@ -19,8 +19,6 @@
 %= button_to Back => '/water'
 
 
-
-
 %= file_field 'avatar'
 
 %= search_field q => 'perl'
