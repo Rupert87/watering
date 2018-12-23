@@ -21,7 +21,7 @@ sub status{
     
     my $self = shift;
     
-    my $jsonstuff = $self ->pg->db->query('select data from tp order BY id desc limit 2;')->hash;
+    my $jsonstuff = $self ->pg->db->query('select data from tp order BY id desc limit 1;')->hash;
     
     
     return $self->render(template => '/water/status', json => $jsonstuff);
