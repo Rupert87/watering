@@ -1,6 +1,6 @@
 package Garden::Controller::Water;
 use Mojo::Base 'Mojolicious::Controller';
-use Mojo::JSON qw(decode_json encode_json);
+use Mojo::JSON qw(to_json);
 
 sub connected{
 
