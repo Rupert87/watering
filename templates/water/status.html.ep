@@ -18,7 +18,6 @@
 <div class="col-sm-9>
 %= button_to Back => '/water'
 
-%= to_json { temperature => 1 };
 
 
 %= file_field 'avatar'
