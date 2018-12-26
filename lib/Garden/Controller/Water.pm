@@ -24,7 +24,7 @@ sub status{
     my $jsonstuff = $self ->pg->db->query('select info from ord order BY id desc limit 1;')->hash;
     
     
-    return $self->render(template => '/water/status', {json => {$jsonstuff => [2, 'temperature',3]});
+    return $self->render(template => '/water/status', {json => {jsonstuff => [2, 'temperature',3]});
     
     
     
