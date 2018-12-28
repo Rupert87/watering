@@ -11,7 +11,7 @@
 
 <div class="col-sm-9>
 my $self->stash(json => $jsonstuff);
-<%= $jsonstuff->{"fields"} %>
+<%= $json->{"fields"} %>
 </div>
 
 
