@@ -11,7 +11,7 @@
 
 <div class="col-sm-9>
 
-<%= $jsonstuff->{'temperature'} %></a>
+<a><%= $jsonstuff->{'temperature'} %></a>
 </div>
 
 
