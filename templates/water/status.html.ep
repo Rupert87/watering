@@ -14,7 +14,7 @@
 <%= $jsonstuff->{'temperature} %>
 </div>
 
-
+<div>
 <div class="col-sm-9>
 <%= button_to Back => '/water' %>
 </div>
