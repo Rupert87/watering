@@ -16,13 +16,6 @@
 
 
 <div class="col-sm-9>
-%= button_to Back => '/water'
-
-
-
-%= file_field 'avatar'
-
-%= search_field q => 'perl'
-
+<%= button_to Back => '/water' %>
 </div>
     
