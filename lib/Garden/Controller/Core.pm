@@ -20,8 +20,6 @@ my $self = shift;
 
 }
 
-In Menu
-
 sub menu{
  
  say 'Menu';
