@@ -32,7 +32,7 @@ sub status{
     #$jsonstuff->stash(json => {info => 'temerature'});
     
     #my $json = $jsonstuff->stash;
-   #return $self->render(template => '/water/status', $jsonstuff->('temperature'));
+   return $self->render(template => '/water/status', $jsonstuff->('temperature'));
     
     
     
