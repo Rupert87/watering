@@ -16,7 +16,7 @@ sub gun{
         my $temp     = $env->temp;
         my $humidity = $env->humidity;
         
-        print $temp;
+        say $env->temp('f');
     
     
     }
