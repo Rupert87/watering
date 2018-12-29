@@ -22,7 +22,7 @@ sub status{
     my $self = shift;
     
     #my $jsonstuff = $self ->pg->db->query('select info from ord order BY id desc limit 1;')->hash;
-    my $jsonstuff = $self ->pg->db->query(select ?::json as fields', {json => {temperature => 'temp'}});
+    my $jsonstuff = $self ->pg->db->query('select ?::json as fields', {json => {temperature => 'temp'}});
     $self->stash( json => $jsonstuff );
     
     #$self->stash(json => $jsonstuff);
