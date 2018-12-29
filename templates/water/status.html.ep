@@ -2,7 +2,7 @@
 % title 'Status';
 
 <div class="col-sm-9> 
-<% %jsonstuff->{'temperature') %>
+<% $jsonstuff->{'temperature') %>
 </div>
 
     
