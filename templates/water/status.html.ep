@@ -2,7 +2,7 @@
 % title 'Status';
 
 <div> 
-<% $jsonstuff->{'temperature') %>
+<%= $jsonstuff->{'temperature'} %>
 </div>
 
     
