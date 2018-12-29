@@ -15,6 +15,8 @@ sub gun{
     
         my $temp     = $env->temp;
         my $humidity = $env->humidity;
+        
+        return $temp;
     
     
     }
