@@ -11,7 +11,7 @@
 
 <div class="col-sm-9>
 <%= stash "json" %> 
-<%= $jsonstuff->{'temperature'} %>
+<%= $json->{'temperature'} %>
 </div>
 
     
