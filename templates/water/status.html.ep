@@ -1,14 +1,6 @@
 % layout 'default';
 % title 'Status';
 
-<div class="row">
-    <h2>Hello</h2>
-<div class="col-sm-9>
-    <btn> Help! </btn>
-    </div>
-    </div>
-
-
 <div class="col-sm-9> 
 <%= $jsonstuff->{'temperature'} %>
 </div>
