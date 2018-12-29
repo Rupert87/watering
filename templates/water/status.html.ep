@@ -9,8 +9,7 @@
     </div>
 
 
-<div class="col-sm-9>
-<%= stash json %> 
+<div class="col-sm-9> 
 <%= $jsonstuff->{'temperature'} %>
 </div>
 
