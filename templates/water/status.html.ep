@@ -10,8 +10,8 @@
 
 
 <div class="col-sm-9>
-my $self->stash(json => $jsonstuff);
-<%= $json->{"fields"} %>
+<%= stash json %> 
+<%= $jsonstuff->{'temperature} %>
 </div>
 
 
