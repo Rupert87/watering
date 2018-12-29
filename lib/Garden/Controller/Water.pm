@@ -21,7 +21,8 @@ sub status{
     
     my $self = shift;
     
-    my $jsonstuff = $self ->pg->db->query('select info from ord order BY id desc limit 1;')->stash->json;
+    my $jsonstuff = $self ->pg->db->query('select info from ord order BY id desc limit 1;')->hash;
+    $self->stash( json => $jsonstuff );
     
     #$self->stash(json => $jsonstuff);
 
