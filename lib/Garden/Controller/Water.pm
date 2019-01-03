@@ -21,7 +21,7 @@ sub status{
     
     my $self = shift;
     
-    my $jsonstuff = $self ->pg->db->query('select info from ord order BY id desc limit 1;')->hash;
+    my $jsonstuff = $self ->pg->db->query('select info from ord order BY genesis desc limit 10;')->hash;
     #my $jsonstuff = $self ->pg->db->query('select ?::json as info', {json => {temperature => 'temp'}});
     #$self->stash( json => $jsonstuff);
     
@@ -33,7 +33,7 @@ sub status{
     #$jsonstuff->stash(json => {info => 'temerature'});
     
     #my $json = $jsonstuff->stash;
-    return $self->render(template => 'water/status', json_data => $jsonstuff);
+    return $self->render(json_data => $jsonstuff);
     
     
   
