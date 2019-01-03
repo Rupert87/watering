@@ -19,7 +19,7 @@
 %= button_to Back => '/water'
 
 
-<%= $json_data->{'temperature'} %>.
+<%= $json_data->{'temperature'} %>
 
 %= search_field q => 'perl'
 
