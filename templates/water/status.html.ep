@@ -19,7 +19,7 @@
 %= button_to Back => '/water'
 
 
-<%= $json_data->{'temperature'} %>
+<%= dumper($json_data) %>
 
 </div>
     
