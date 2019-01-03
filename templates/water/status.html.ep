@@ -1,3 +1,27 @@
+% layout 'default';
+% title 'Status';
 
+<div class="row">
+    <h2>This is the Temperature Sensors</h2>
+<div class="col-sm-9>
+    <btn> I Love Mojo</btn>
+    </div>
+    </div>
+
+
+<div class="col-sm-9>
+
+%= button_to Status => 'water/status'
+</div>
+
+
+<div class="col-sm-9>
+%= button_to Back => '/water'
+
+
+<%= $json_data->{'temperature'} %>
+
+</div>
+    
 
     
