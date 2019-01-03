@@ -1,8 +1,8 @@
 % layout 'default';
 % title 'Status';
 
-<div> 
-<%= json_data->{'temperature'} %>
-</div>
+
+<%= $json_data->{'temperature'} %>
+
 
     
