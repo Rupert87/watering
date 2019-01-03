@@ -20,7 +20,7 @@ sub status{
     
     
     my $self = shift;
-    my $jsonstuff = $self ->pg->db->query('select info from ord order BY genesis desc limit 10;')->hash->{'info'};
+    my $jsonstuff = $self ->pg->db->query('select info::json from ord order BY genesis desc limit 10;')->hash->{'info'};
     $jsonstuff = Mojo::JSON->from_json($jsonstuff);
     #my $jsonstuff = $self ->pg->db->query('select info from ord order BY genesis desc limit 10;')->hash;
     #my $jsonstuff = $self ->pg->db->query('select ?::json as info', {json => {temperature => 'temp'}});
