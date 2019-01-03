@@ -21,8 +21,6 @@
 
 <%= $json_data->{'temperature'} %>
 
-%= search_field q => 'perl'
-
 </div>
     
 
