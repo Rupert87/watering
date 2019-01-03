@@ -8,14 +8,14 @@ sub connected{
 
 }
 
-#sub water{
+sub water{
     
- #   my $self = shift;
+    my $self = shift;
     
-  #  my $rs = $self->pg->db->query('select data from tax');
+    my $rs = $self->pg->db->query('select data from tax');
     
    
-   # }
+    }
 sub status{
     
     
@@ -33,7 +33,7 @@ sub status{
     #$jsonstuff->stash(json => {info => 'temerature'});
     
     #my $json = $jsonstuff->stash;
-    return $self->render(json_data => $jsonstuff);
+    return $self->render(template => 'water/status', json_data => $jsonstuff);
     
     
   
