@@ -8,14 +8,14 @@ sub connected{
 
 }
 
-sub water{
+#sub water{
     
-    my $self = shift;
+ #   my $self = shift;
     
-    my $rs = $self->pg->db->query('select data from tax');
+  #  my $rs = $self->pg->db->query('select data from tax');
     
    
-    }
+   # }
 sub status{
     
     
