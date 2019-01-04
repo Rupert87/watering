@@ -12,10 +12,6 @@
 <div class="col-sm-9>
 
 <%= $json_data->{'info'}->{'humidity'}  %>
-</div>
-
-
-<div class="col-sm-9>
 
 
 <%= $json_data->{'info'}->{'temperature'}  %>
