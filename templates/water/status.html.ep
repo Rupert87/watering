@@ -12,6 +12,7 @@
 <div class="col-sm-9>
 
 %= button_to Status => 'water/status'
+<%= $json_data->{'info'}->{'humidity'}  %>
 </div>
 
 
