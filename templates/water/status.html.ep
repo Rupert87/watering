@@ -16,7 +16,6 @@
 
 
 <div class="col-sm-9>
-%= button_to Back => '/water'
 
 
 <%= $json_data->{'info'}->{'temperature'}  %>
