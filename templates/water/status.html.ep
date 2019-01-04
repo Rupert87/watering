@@ -10,9 +10,9 @@
 
 
 <div class="col-sm-9>
-
+<h2> Temp </h2>
 <%= $json_data->{'info'}->{'humidity'}  %>
-
+<h2> Humidity </h2>
 
 <%= $json_data->{'info'}->{'temperature'}  %>
 
