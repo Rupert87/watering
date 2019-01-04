@@ -9,10 +9,6 @@
     </div>
 
 
-<div class="col-md-6>
-
-%= button_to Status => 'water/status'
-</div>
 
 
  <div class="dropdown">
