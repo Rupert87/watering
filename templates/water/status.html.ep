@@ -22,16 +22,17 @@
     <div class="row">
 
         <div class="col-md-4"><h2>This is the Temperature Sensors</h2></div>
-        <div class="col-md-4"> <btn> I Love Mojo</btn> </div>
-        <div class="col-md-4"> uhoh </div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
 
     </div>
 
     <div class="row">
 
+        
+        <div class="col-md-6"> <h2> Temperature </h2> <%= $json_data->{'info'}->{'temperature'}  %> </div>
         <div class="col-md-6"> <h2> Humidity </h2> <%= $json_data->{'info'}->{'humidity'}  %> </div>
 
-        <div class="col-md-6"> <h2> Temperature </h2> <%= $json_data->{'info'}->{'temperature'}  %> </div>
 
     </div>
 <div>
