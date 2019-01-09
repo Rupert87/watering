@@ -124,25 +124,4 @@ return $self;
      
     }
     
-sub weather_test{
-    
-    
-   my $weather = Weather::Underground->new(
-        place => "Tonganoxie, Kansas",
-        debug => 1,
-        )
-        || die "Error, could not create new weather object: $@\n";
- 
-my $arrayref = $weather->get_weather()
-        || die "Error, calling get_weather() failed: $@\n";
- 
-foreach (@$arrayref) {
-        print "MATCH:\n";
-        while (($key, $value) = each %{$_}) {
-                print "weather";
-        }
-}
-    
-    
-    }
 1;
