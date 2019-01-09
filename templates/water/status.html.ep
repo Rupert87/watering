@@ -7,9 +7,9 @@
 <div class="container">
     <div class="row">
 
-        <div class="col-md-4><h2>This is the Temperature Sensors</h2></div>
-        <div class="col-md-4> <btn> I Love Mojo</btn> </div>
-        <div class="col-md-4> uhoh </div>
+        <div class="col-md-4"><h2>This is the Temperature Sensors</h2></div>
+        <div class="col-md-4"> <btn> I Love Mojo</btn> </div>
+        <div class="col-md-4"> uhoh </div>
 
     </div>
 
