@@ -126,25 +126,25 @@ return $self;
     
     
     
-  sub chart_data{
+  #sub chart_data{
       
-      use Chart::Clicker;
+  #    use Chart::Clicker;
  
-my $cc = Chart::Clicker->new;
+#my $cc = Chart::Clicker->new;
  
-my @values = (42, 25, 86, 23, 2, 19, 103, 12, 54, 9);
-$cc->add_data('Sales', \@values);
+#my @values = (42, 25, 86, 23, 2, 19, 103, 12, 54, 9);
+#$cc->add_data('Sales', \@values);
  
 # alternately, you can add data one bit at a time...
-foreach my $v (@values) {
-  $cc->add_data('Sales', $v);
-}
+#foreach my $v (@values) {
+#  $cc->add_data('Sales', $v);
+#}
  
 # Or, if you want to specify the keys you can use a hashref
-my $data = { 12 => 123, 13 => 341, 14 => 1241 };
-$cc->add_data('Sales', $data);
+#my $data = { 12 => 123, 13 => 341, 14 => 1241 };
+#$cc->add_data('Sales', $data);
  
-$cc->write_output('foo.png');
+#$cc->write_output('foo.png');
       
-      }
-1;
+#      }
+#1;
