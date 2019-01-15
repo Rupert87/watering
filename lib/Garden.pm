@@ -74,5 +74,6 @@ sub startup {
   $authed->post('/water')->to('water#tracking')->name('tracking');#use to track status of water controller 
   $authed->get('/water/connected')->to('water#connected');
   $authed->get('/water/new')->to('menu#gun')->name('gun');
+  $authed->get('/water/chart')->to('water#chart_data');
 }
 1;
