@@ -22,7 +22,7 @@ sub status{
     
     
     my $self = shift;
-    my $jsonstuff = $self ->pg->db->query('select info from ord order BY genesis desc limit 10;')->expand->hash;
+    my $jsonstuff = $self ->pg->db->query('select info from ord order BY genesis desc;')->expand->hash;
     warn $self->dumper($jsonstuff);
     #$jsonstuff = Mojo::JSON->from_json($jsonstuff);
     #my $jsonstuff = $self ->pg->db->query('select info from ord order BY genesis desc limit 10;')->hash;
@@ -39,9 +39,7 @@ sub status{
     #my $json = $jsonstuff->stash;
     return $self->render(json_data => $jsonstuff);
     
-    
-  
-    }
+     }
     
 sub weather_data{
     
