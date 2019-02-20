@@ -124,25 +124,38 @@ return $self;
     
     
     
-  #sub chart_data{
+  sub chart_data{
       
-  #    use Chart::Clicker;
- 
-#my $cc = Chart::Clicker->new;
- 
-#my @values = (42, 25, 86, 23, 2, 19, 103, 12, 54, 9);
-#$cc->add_data('Sales', \@values);
- 
-# alternately, you can add data one bit at a time...
-#foreach my $v (@values) {
-#  $cc->add_data('Sales', $v);
-#}
- 
-# Or, if you want to specify the keys you can use a hashref
-#my $data = { 12 => 123, 13 => 341, 14 => 1241 };
-#$cc->add_data('Sales', $data);
- 
-#$cc->write_output('foo.png');
-      
-#      }
-#1;
+
+
+ // javascript
+var dataset = [20, 100, 56, 120, 180, 30, 40, 120, 160];
+
+var svgWidth = 500, svgHeight = 300, barPadding = 5;
+var barWidth = (svgWidth / dataset.length);
+
+
+var svg = d3.select('svg')
+    .attr("width", svgWidth)
+    .attr("height", svgHeight);
+    
+var barChart = svg.selectAll("rect")
+    .data(dataset)
+    .enter()
+    .append("rect")
+    .attr("y", function(d) {
+         return svgHeight - d 
+    })
+    .attr("height", function(d) { 
+        return d; 
+    })
+    .attr("width", barWidth - barPadding)
+    .attr("transform", function (d, i) {
+        var translate = [barWidth * i, 0]; 
+        return "translate("+ translate +")";
+    });
+
+
+
+}
+1;
